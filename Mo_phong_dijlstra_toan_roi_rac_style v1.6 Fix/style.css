@@ -1,0 +1,127 @@
+body {
+    background: #1093a7;
+    margin: 0;
+}
+
+div.up_line {
+    position: absolute;
+    height: 30vh;
+    width: 100%;
+    z-index: -1;
+    background-color: #24454c;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+h2 header.section_header {
+    margin: 10px;
+}
+
+header.page_header{
+    margin: auto;
+    text-align: center;
+    color: #ffffff;
+}
+
+header {
+    color: #24454c;
+}
+
+.button{
+    background-color: #589ba4;
+    border: none;
+    color: #000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: white;
+    border: 2px solid #589ba4;
+}
+
+.button.graph_btn{
+    width: 90%;
+}
+
+.button:disabled {
+    border: none;
+    background-color: gray;
+    opacity: 0.8;
+    -webkit-transition-duration: 0s; /* Safari */
+    transition-duration: 0s;
+}
+
+#btnSelectStartVertex{
+    border-radius: 8px;
+}
+
+th {
+    border: 1px solid black;
+    background-color: #589ba4
+}
+
+div.box {
+    position: absolute;
+    margin-top: 15vh;
+}
+
+div.sections {
+    display: table-cell;
+    /*margin-top: 15vh;*/
+    /*float: left;*/
+    background-color: #def2f3;
+    text-align: center;
+    border: 1px solid black;
+    height: 100vh;
+}
+
+div.inners {
+    margin: auto;
+    padding: 10px;
+}
+
+#graph_div {
+    width: 200px;
+}
+
+#canvas_div{
+    width: 780px;
+    /*width: 45vw;*/
+}
+
+#algorithm_div {
+    width: 500px;
+    /*width: 30vw;*/
+}
+
+#info_field {
+    background-color: white;
+    border: 1px solid #000;
+    text-align: left;
+    height: 320px;
+    max-width: 460px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+canvas {
+    border-radius: 4px;
+    position: relative;
+    border:1px solid #000;
+    margin: auto;
+}
+table, td {
+    border: 1px solid black;
+    border-spacing: 0;
+    text-align: center;
+    background-color: white;
+}
