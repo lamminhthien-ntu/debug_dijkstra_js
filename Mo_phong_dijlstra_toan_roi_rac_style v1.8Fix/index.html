@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Algorithm Dijkstra</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="up_line" id="up_line">
+        <header class="page_header"><h1 id="header">Mô phỏng từng bước dijkstra Theo môn toán rời rạc</h1></header>
+    </div>
+
+
+    <div class="box">
+        <div class="sections" id="graph_div">
+            <header class="section_header"><h2> Khu vực đồ thị </h2></header>
+            <button class="button graph_btn" id="btnView" title="Cho phép di chuyển vị trí các đỉnh bằng kéo thả chuột">Quan sát</button>
+            <button class="button graph_btn" id="btnCreateVertex" title="Hãy click vào khu vực canvas">Tạo đỉnh</button>
+            <button class="button graph_btn" id="btnCreateEdge" title="Hãy chọn lần lượt 2 đỉnh">Tạo cạnh</button>
+            <button class="button graph_btn" id="btnClearGraph" title="Xóa toàn bộ đồ thị">Xóa sạch</button>
+            <button class="button graph_btn" id="btnCreateRandomGraph" title="Tạo đồ thị ngẫu nhiên">Tạo đồ thị ngẫu nhiên</button>
+            <button class="button graph_btn" id="btnSelectStartVertex" title="Chọn đỉnh làm đỉnh nguồn">
+                Chọn đỉnh nguồn (Đỉnh khởi đầu)
+            </button>
+        </div>
+
+
+
+        <div class="sections" id="canvas_div">
+            <header class="section_header" ><h2> Khu vực canvas </h2></header>
+            <canvas id="canvas" width="1040" height="680"> Hãy cập nhật trình duyệt để chạy chương trình này </canvas>
+            <div id="path_info_field">
+                    <h1>Tesst</h1>
+                    
+            </div>
+        </div>
+
+
+        <div class="sections" id="algorithm_div" style=" width: 649px";>
+            <header class="section_header"><h2> Khu vực điều khiển thuật toán </h2></header>
+            <button class="button algo_btn" id="btnStart" title="Bắt đầu thuật toán">Start</button>
+            <button class="button algo_btn" id="btnPause">Pause</button>
+            <button class="button algo_btn" id="btnStop">Stop</button>
+            <button class="button algo_btn" id="btnNextStep" title="Nút này chỉ hoạt động khi thuật toán đang dừng">Bước kế tiếp</button>
+            <h4>Tốc độ thực thi</h4>
+            <select id="speed_select">
+                <optgroup label="Speed">
+                    <option value="0.25">0.25x</option>
+                    <option value="0.5">0.5x</option>
+                    <option selected value="1">1x</option>
+                    <option value="2">2x</option>
+                    <option value="3">3x</option>
+                    <option value="4">4x</option>
+                    <option value="5">5x</option>
+                    <option value="6">6x</option>
+                    <option value="7">7x</option>
+                    <option value="999">Chạy tức thì</option>
+                    
+                </optgroup>
+            </select>
+
+            <div class="inners">
+                <h3>Bảng khoảng cách</h3>
+                <table id="distances">
+                    <tr id="tr_id">
+                        <th><b>ID đỉnh</b></th>
+                    </tr>
+                    <tr id="tr_distances">
+                        <th><b>Chi phí</b></th>
+                    </tr>
+                    <tr id="tr_prev_vertex">
+                        <th><b>Đường đi</b></th>
+                    </tr>
+                </table>
+             </div>
+
+
+            <div class="inners">
+                <h3>Bảng thông tin</h3>
+                <p id="info_field">
+                    Tại đây bản sẽ có thể thấy thông tin về cách thuật toán làm việc..... <br>
+                    Chọn <b>đỉnh bắt đầu</b>và nhấn<b>nút Start</b> để bắt đầu thuật toán
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
